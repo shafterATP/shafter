@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#08152d"><title>SHAFTER — Dashboard</title><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div><small>SHAFTER</small><h1>Mon évolution</h1><p id="date"></p></div><div class="streak"><b id="streak">0</b><span>jours</span></div></header>
+<nav><button class="tab active" data-page="today">Aujourd'hui</button><button class="tab" data-page="goals">Objectifs</button><button class="tab" data-page="progress">Progression</button></nav>
+<main>
+<section id="today" class="page active">
+<div class="card hero"><div><label>OBJECTIF DU JOUR</label><h2 id="dailyTitle"></h2><p id="dailyText"></p></div><div class="circle"><b id="pct">0%</b></div></div>
+<div class="card"><div class="head"><h2>🧠 Culture & science</h2><span id="theme"></span></div><h3 id="knowledgeTitle"></h3><p id="knowledgeText"></p><button id="newKnowledge" class="dark">Nouvelle connaissance</button></div>
+<div class="card"><div class="head"><h2>🎯 Mes objectifs du jour</h2><span id="count">0/0</span></div><div id="todayTasks"></div></div>
+</section>
+
+<section id="goals" class="page">
+<div class="card"><div class="head"><h2>🎯 Tous mes objectifs</h2><span>à cocher</span></div>
+<p class="muted">Coche ce que tu accomplis. Ta progression est sauvegardée sur ce téléphone.</p>
+<div id="allTasks"></div></div>
+<div class="card"><h2>➕ Ajouter un objectif</h2><input id="newTask" placeholder="Ex. 20 min de marche"><button id="addTask">Ajouter</button></div>
+</section>
+
+<section id="progress" class="page">
+<div class="card"><h2>📈 Ma progression</h2><div id="stats"></div></div>
+<div class="card"><h2>🏢 Road to SHAFTER</h2><div class="barrow"><span>Design</span><i><em style="width:70%"></em></i><b>70%</b></div><div class="barrow"><span>Photoshop</span><i><em style="width:65%"></em></i><b>65%</b></div><div class="barrow"><span>Illustrator</span><i><em style="width:55%"></em></i><b>55%</b></div><div class="barrow"><span>HTML/CSS</span><i><em style="width:25%"></em></i><b>25%</b></div><h3>Étapes</h3><div class="milestones"><span>☐ Portfolio</span><span>☐ Premiers clients</span><span>☐ Entreprise</span><span>☐ Agence</span><span>☐ Grand bâtiment</span></div></div>
+<div class="card"><h2>📓 Journal</h2><textarea id="journal" placeholder="Ce que j'ai appris, réussi ou ce que je veux améliorer..."></textarea><button id="save">Enregistrer</button></div>
+</section>
+</main><footer>Petit progrès aujourd’hui. Grande vision demain.</footer><script src="app.js"></script></body></html>

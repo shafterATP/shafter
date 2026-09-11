@@ -1,1 +1,10 @@
-{"name":"SHAFTER — Mon évolution","short_name":"SHAFTER","start_url":"./index.html","display":"standalone","background_color":"#061126","theme_color":"#08152d","icons":[]}
+{
+  "name": "SHAFTER — Mon évolution",
+  "short_name": "SHAFTER",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#020b16",
+  "theme_color": "#061426",
+  "description": "Tableau de bord personnel SHAFTER : objectifs, apprentissage, culture, science, sport et progression.",
+  "icons": []
+}
